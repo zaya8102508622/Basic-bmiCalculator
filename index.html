@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h2>BMI CALCULATOR</h2>
+        <p class="text">Age</p>
+        <input type="text" id="age">
+        <p class="text">Gender</p>
+          <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+          <label><input type="radio" id="female" name="gender" value="female"> Female</label>
+        <p class = "text">Height</p>
+        <input type="text" id="height">
+        <p class = "text">Weight</p>
+        <input type="text" id="weight">
+        <p id ="result"></p>
+        <button id ="btn" onClick="bmi()">Calculate</button>
+        <button id="resetBtn" onclick="resetFields()">Reset</button>
+        <p id = "info">Please Enter Height in [cm] and Weight in [kg]</p>
+    </div>
+    
+    <script>
+        function bmi(){
+            var h = document.getElementById('height').value;
+            var w = document.getElementById('weight').value;
+            var bmi = w /((h / 100) * (h /100));
+            var total =  bmi.toFixed(2);
+            document.getElementById('result').innerHTML = "Your BMI is" + total;
+        }
+        
+        function resetFields() {
+            document.getElementById('height').value = '';
+            document.getElementById('weight').value = '';
+            document.getElementById('age').value='';
+            document.getElementById('result').innerHTML = '';
+            document.getElementById('male').checked = false;
+            document.getElementById('female').checked = false;
+
+        }
+
+    </script>
+</body>
+</html>

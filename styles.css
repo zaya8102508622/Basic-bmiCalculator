@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-image: url(bmi.avif);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+div{
+    width: 500px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    padding: 5px;
+    background-color:rgb(210, 229, 185);
+    box-shadow: 2px , 2px , 20px , rgb(192, 81, 81);
+    line-height: 10px;
+}
+#btn{
+    margin-top: 10px;
+    color:rgb(16, 16, 16);
+    background-color: beige;
+    width:150px;
+    padding:10px;
+    font-weight: 500;
+}
+#resetBtn{
+    margin-top:10px;
+    color:black;
+    background-color:beige;
+    width: 150px;
+    padding: 10px;
+    font-weight: 500;
+}
+.text {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; 
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #42203d; 
+    width: 18px;
+    height: 18px;
+  }
+  
